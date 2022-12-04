@@ -3,9 +3,6 @@ import numpy as np
 from pprint import pprint
 
 
-# master_sample_means now has 7 rows, each representing an array holding sample means for an n_value.
-# For example, accessing master_sample_means[2][249] is accessing the 250th mean (index 249)
-# that was generated for an n value of 50 (the n-value at index 2 of the N_VALS array).
 
 def generate_sample_means(N_VALS, num_of_means):
     master_sample_means = [None] * len(N_VALS)
@@ -24,6 +21,9 @@ def main():
     N_VALS =[10, 30, 50, 100, 250, 500, 1000]
     my_sample_means = generate_sample_means(N_VALS, 250)
     pprint(my_sample_means)
+    # my_sample_means now has 7 rows, each representing an array holding sample means for an n_value.
+    # For example, accessing my_sample_means[2][249] is accessing the 250th mean (index 249)
+    # that was generated for an n value of 50 (the n-value at index 2 of the N_VALS array).
 
 
 if __name__ == "__main__":
