@@ -6,6 +6,10 @@ from pprint import pprint
 # inverse_cdf = sqrt( -6,498 * ln(1-p))
 # With the function above, you can give a probability and will get an x value that is aligned with the distribution
 
+
+"""
+@param n is the number of distances you want to generate
+"""
 def generate_distances(n):
     distances = [None]*n
 

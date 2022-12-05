@@ -3,6 +3,10 @@ import numpy as np
 from pprint import pprint
 
 
+"""
+@param N_VALS is the set of n_values you would like to generate data for
+@param num_of_means is the number of independent sample means you want to generate
+"""
 
 def generate_sample_means(N_VALS, num_of_means):
     master_sample_means = [None] * len(N_VALS)
